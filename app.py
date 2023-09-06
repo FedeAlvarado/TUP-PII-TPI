@@ -17,11 +17,10 @@ def menu():
 while respuesta != "salir":
     menu()
     opt = input("\n Ingrese la opción de menú: ")
-    os.system ("cls") #Limpiar pantalla
+    os.system ("cls") 
     if opt.isnumeric():
         if int(opt) == 1:
-            #completar
-            print()
+            input("Ingrese el codigo del libro")
         elif int(opt) == 2:
             #completar
             print()
