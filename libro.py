@@ -9,14 +9,14 @@ def nuevo_libro():
     codigo = generar_codigo()
     titulo = input("Ingrese el nombre del libro:")
     autor = input("Ingrese el nombre del autor del libro:")
-    cant_ej_ad = input("Ingrese la cantiad de ejemplares que se adquirieron:")
+    cant_ej_ad1 = int(input("Ingrese la cantiad de ejemplares que se adquirieron:"))
+    cant_ej_pr1= int(input("Ingrese la cantidad de ejemplares prestados: "))
 
-    libro_nuevo = {'cod': codigo,'autor': autor,'titulo': titulo,'cant_ej_ad': cant_ej_ad,'cant_ej_pr': 0} 
-
+    libro_nuevo = {'cod': codigo,'autor': autor,'titulo': titulo,'cant_ej_ad': cant_ej_ad1,'cant_ej_pr': cant_ej_pr1} 
 
     #NO SE SI MOSTRAR LA INFO O NO DEL LIBRO
-    print("Libro registrado con éxito:")
-    print(f"Código: {codigo} - Autor: {autor} - Título: {titulo} - Cantidad de ejemplares adquiridos: {cant_ej_ad}") 
+    print("Libro registrado:")
+    print(f"Código: {codigo} | Autor: {autor} | Título: {titulo} | Cantidad de ejemplares adquiridos: {cant_ej_ad1} | Cantidad de ejemplares prestados: {cant_ej_pr1}") 
     return libro_nuevo
 
 def generar_codigo():
